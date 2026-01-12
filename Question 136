@@ -1,0 +1,11 @@
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        // here in this we are going to find the number which only apper at once in the given set of elements 
+        int answer=0;
+        for(int i:nums){
+            answer=answer^i; // here i am using the XOR operator 
+        }
+        return answer;
+    }
+};
